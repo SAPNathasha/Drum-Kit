@@ -21,8 +21,9 @@ button{
     width: 7rem;
     height: 7rem;
     font-size: 50px;
-    color: rgb(250, 81, 109);
+    color: rgb(234, 42, 144);
     border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 button:hover{
     transform: scale(1.1);
@@ -33,4 +34,46 @@ footer{
     font-size: 30px;
     display: flex;
     justify-content: center;
+}
+.w{
+    background-image: url(Images/tom-deep.png);
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.a{
+    background-image: url(Images/tom-joke.png);
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.s{
+    background-image: url(Images/tom-kick.png);
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.d{
+    background-image: url(Images/tom-snare.png);
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.j{
+    background-image: url(Images/tom4.png);
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.k{
+    background-image: url(Images/tom-crash.png);
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+.l{
+    background-image: url(Images/tom5.png);
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;
 }
