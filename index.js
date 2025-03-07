@@ -1,9 +1,11 @@
 
     
     for(var i=0; i<7; i++){
+        //when click the key
         document.querySelectorAll(".drum")[i].addEventListener("click", function() {
             var button = this.innerHTML;
             makeSound(button);
+            btnAnimation(button);
                 
         });
      };
@@ -13,9 +15,10 @@
 // When keyboard key press...
 document.addEventListener("keypress" , function(e){
     makeSound(e.key);
+    btnAnimation(e.key);
 })
 
-//when click from mouse...
+//the process
 function makeSound(btn){
     switch (btn){
         case "w":
@@ -50,6 +53,12 @@ function makeSound(btn){
     }
 }       
     
-     
-
+// when click the key, animation  
+function btnAnimation(currentKey){
+    var currentBtn = document.querySelector("."+ currentKey);
+    currentBtn.classList.add("pressed");
+    setTimeout(function(){
+        currentBtn.classList.remove("pressed");
+    }, 100);
+}
 
